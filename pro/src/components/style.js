@@ -39,11 +39,13 @@ export const btn = styled.button`
   cursor: pointer;
 `;
 
-export const bigdiv = styled.div`
+export const infdiv = styled.div`
   width: 100%;
+  height: 200px;
   display: flex;
   justify-content: center;
   padding: 100px 0 100px 0;
+  background-color: grey;
 `;
 
 export const infinitydiv = styled.div`
@@ -53,9 +55,3 @@ export const infinitydiv = styled.div`
   border-radius: 20px;
 `;
 
-export const list = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: skyblue;
-`;
