@@ -46,8 +46,8 @@ function InfinityScroll() {
   }
 
   useEffect(() => {
+      Check();
   }, [page]);
-  Check();
   return (
     <S.infdiv>
       <S.infinitydiv page={page}>안녕하세요</S.infinitydiv>
