@@ -6,6 +6,9 @@ function LoginMenu() {
   const [inputId, setInputId] = useState(""); // 동적 사용을 위해 useState 사용
   const [inputPw, setInputPw] = useState("");
   const BASEURL = process.env.REACT_APP_BASE_URL;
+  let check = false;
+  const loginScreen = document.querySelector(".modal");
+
   const clickId = (e) => {
     // id input 클릭했을때 실행
     setInputId(e.target.value); // input 값 변경
@@ -25,6 +28,10 @@ function LoginMenu() {
       })
       .then((res) => {
         alert("로그인 성공!");
+        check = true;
+        if(check === true){
+            loginScreen.style.display = "none";
+        }
         console.log(res); 
       })
       .catch((err) => {
@@ -34,7 +41,7 @@ function LoginMenu() {
   };
 
   return (
-    <S.login>
+    <S.login className="modal">
       <S.title>로그인</S.title>
       <S.idInput
         type="id"

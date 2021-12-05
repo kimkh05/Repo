@@ -41,8 +41,10 @@ export const btn = styled.button`
 
 export const infdiv = styled.div`
   width: 100%;
-  height: 200px;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 100px 0 100px 0;
   background-color: grey;
@@ -51,6 +53,7 @@ export const infdiv = styled.div`
 export const infinitydiv = styled.div`
   width: 50%;
   background-color: lightgreen;
+  margin: 30px 0 30px 0;
   text-align: center;
   border-radius: 20px;
 `;
