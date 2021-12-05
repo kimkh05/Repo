@@ -22,6 +22,7 @@ function InfinityScroll() {
         //div = [...div, ...div.length];
         setDiv(div.concat(res.data.div));
         setPage(page + 1);
+        setTimeout(() => console.log("after"), 3000);
       })
       .catch((err) => {
         console.log(err);
@@ -62,7 +63,7 @@ function InfinityScroll() {
         <S.infinitydiv>시도중이요</S.infinitydiv>
         <S.infinitydiv>다섯글자들</S.infinitydiv>
         {div.map((res) => (
-          <S.infinitydiv>map 함수 작동</S.infinitydiv>
+          <S.infinitydiv>map 함수 작동 {page}</S.infinitydiv>
         ))}
       </S.infdiv>
     </>
