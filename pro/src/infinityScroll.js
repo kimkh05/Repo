@@ -52,7 +52,10 @@ function InfinityScroll() {
         <S.infinitydiv>hello</S.infinitydiv>
         <S.infinitydiv>hello</S.infinitydiv>
         {div.map((res) => (
+          <>
+          <S.infinitydiv>hello</S.infinitydiv>
           <S.infinitydiv>world</S.infinitydiv>
+          </>
         ))}
       </S.infdiv>
     </>
