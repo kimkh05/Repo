@@ -22,7 +22,7 @@ function InfinityScroll() {
         //div = [...div, ...div.length];
         setDiv(div.concat(res.data.div));
         setPage(page + 1);
-        setTimeout(() => console.log("after"), 3000);
+        setTimeout(() => console.log("after"), 1000);
       })
       .catch((err) => {
         console.log(err);
@@ -48,22 +48,11 @@ function InfinityScroll() {
     <>
       <S.infdiv>
         <h1>무한 스크롤 테스트</h1>
-        <S.infinitydiv>안녕하세요</S.infinitydiv>
-        <S.infinitydiv>반갑습니다</S.infinitydiv>
-        <S.infinitydiv>무한스크롤</S.infinitydiv>
-        <S.infinitydiv>테스트에요</S.infinitydiv>
-        <S.infinitydiv>작동안한다</S.infinitydiv>
-        <S.infinitydiv>시도중이요</S.infinitydiv>
-        <S.infinitydiv>다섯글자들</S.infinitydiv>
-        <S.infinitydiv>안녕하세요</S.infinitydiv>
-        <S.infinitydiv>반갑습니다</S.infinitydiv>
-        <S.infinitydiv>무한스크롤</S.infinitydiv>
-        <S.infinitydiv>테스트에요</S.infinitydiv>
-        <S.infinitydiv>작동안한다</S.infinitydiv>
-        <S.infinitydiv>시도중이요</S.infinitydiv>
-        <S.infinitydiv>다섯글자들</S.infinitydiv>
+        <S.infinitydiv>hello</S.infinitydiv>
+        <S.infinitydiv>hello</S.infinitydiv>
+        <S.infinitydiv>hello</S.infinitydiv>
         {div.map((res) => (
-          <S.infinitydiv>map 함수 작동 {page}</S.infinitydiv>
+          <S.infinitydiv>world</S.infinitydiv>
         ))}
       </S.infdiv>
     </>
