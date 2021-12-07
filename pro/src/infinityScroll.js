@@ -22,7 +22,7 @@ function InfinityScroll() {
         //div = [...div, ...div.length];
         setDiv(div.concat(res.data.div));
         setPage(page + 1);
-        setTimeout(() => console.log("after"), 1000);
+        setTimeout(() => console.log("실행지연"), 1000);
       })
       .catch((err) => {
         console.log(err);
@@ -53,7 +53,7 @@ function InfinityScroll() {
         <S.infinitydiv>hello</S.infinitydiv>
         {div.map((res) => (
           <>
-          <S.infinitydiv>hello</S.infinitydiv>
+          <S.infinitydiv>dfdfd</S.infinitydiv>
           <S.infinitydiv>world</S.infinitydiv>
           </>
         ))}
